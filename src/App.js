@@ -19,7 +19,7 @@ import { Route, Switch } from "react-router-dom";
 import { CircularProgress } from "@material-ui/core";
 import React from "react";
 import Loadable from "react-loadable";
-//import Author from "./components/Author";
+import Author from "./components/Author";
 
 //define persisted state
 const persistedState = loadState();
@@ -29,11 +29,12 @@ const store = createStore(genresReducer, persistedState);
 store.subscribe(() => {
   saveState(store.getState());
 });
-
+/*
 const Author = Loadable({
   loader: () => import("./components/Author"),
   loading: CircularProgress
 });
+*/
 
 export default function App() {
   return (
