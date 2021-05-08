@@ -1,0 +1,65 @@
+
+@import './constants.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  //display:none;
+  overflow-x: hidden;
+  background-color: var(--color-blueDarker);
+  
+}
+.App {
+  background-color:var(--color-blueDarker);
+//background-image: linear-gradient(275deg, #000000 0%, #434343 74%);
+  font-family: sans-serif;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  display: inline-flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  padding:0% 20%;
+  .content{
+    width:40%;
+    max-width: 600px;
+    overflow-x: hidden;
+    .posts{
+      overflow-x: hidden;
+      width:100%;
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .pictures{
+    width:40%;
+    position: fixed;
+    margin-left:600px;
+    min-width: 600px;
+    max-width: 650px;
+    padding-top:100px;
+    margin-right:10px;
+  }
+  
+
+}
+
+@media(max-width:750px){
+  .App{
+    padding:0 10px;
+    .content{
+      width:100%;
+      max-width: auto;
+    }
+    .pictures{
+      width:0%;
+      display:none
+    }
+  }
+}

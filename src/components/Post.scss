@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+@import '../constants.scss';
+@import url("https://use.typekit.net/koj1ouu.css");
+
+
+
+.post{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height:auto;
+width:100%;
+border-radius:5px;
+background-color:var(--color-blueDark);
+color:rgb(19, 15, 59);
+margin-bottom: 25px;
+*{
+  a{
+    text-decoration: none;
+    color:inherit;
+  }
+}
+textarea{
+  position:absolute;
+  left:-2000px;
+}
+    .post-titlebar{
+      width:100%;
+      padding:5px 10px;
+      display:inline-flex;
+      justify-content: flex-start;
+      color:var(--color-grey);
+      span{
+        margin-right: 8px;
+        
+      }
+      
+      .author-username{
+        font-weight:700;
+        font-size: 1.1rem;
+      }
+    
+      .titlebar-menu{
+          margin-left:auto;
+          width:50px;
+          position: relative;
+          .titlebar-menubar{
+            position: absolute;
+            
+          }
+      }
+    }
+
+    .post-display{
+      //font-family: 'Benne', serif;
+      font-family: adobe-kannada, sans-serif; 
+      word-spacing:6px;
+        margin:0 0px;
+        display: flex;
+        height:auto;
+        font-size: 1.7rem;
+        font-weight:600;
+        align-items: center;
+        padding:10px;
+        color:var(--color-greyLight);
+        align-items: center;
+       
+        div{
+          width:100%;
+          p{
+            margin:4px;
+            line-height:2.5rem;
+
+          }
+        }
+    }
+
+  .reaction-bar{
+    width:100%;
+      padding:5px 10px;
+      display:inline-flex;
+      justify-content: flex-start;
+      span{
+        margin-right: 8px;
+        cursor: pointer;
+        
+        svg{
+          color:transparent;
+          fill:var(--color-grey);
+        }
+        &:hover{
+          svg{
+            fill:rgb(230, 230, 245);
+            color:transparent;
+          }
+        }
+      }
+      .translate-to-english{
+        width:50px;
+        position: relative;
+        margin-left:auto;
+        
+        .translate-tooltip{
+          display: none;
+          position: absolute;
+          justify-content: center;
+          align-items: center;
+          border-radius:4px;
+          background-color: var(--color-blueDarker);
+          color:var(--color-red);
+          bottom:40px;
+          right:0px;
+          height:30px;
+          width:170px;
+          font-size:16px;
+        }
+        &:hover .translate-tooltip{
+          display: inline-flex;
+        }
+      }
+  }
+}
+
+@media(max-width:750px){
+  .post{
+    width:325px;
+  }
+}

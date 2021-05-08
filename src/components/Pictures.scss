@@ -1,0 +1,36 @@
+
+.picture{
+  width:100%;
+  height: 80vh;
+  img{
+    width:100%;
+    object-fit: cover;
+    opacity: 0.8;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
+  
+  }
+}
+
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:0;
+}
+
+30% {
+  opacity:0.6;
+}
+60% {
+  opacity:0.7;
+}
+100% {
+opacity:0.8;
+}
+}
+

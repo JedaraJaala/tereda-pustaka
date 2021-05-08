@@ -1,0 +1,46 @@
+@import '../constants.scss';
+
+.header{
+
+  a{
+    text-decoration: none;
+    color:inherit;
+  }
+
+display:inline-flex;
+justify-content: flex-start;
+align-items: center;
+width:100%;
+max-width: 600px;
+position: fixed;
+z-index: 10;
+background-color: var(--color-blueDarker);
+
+.header-title{
+  font-family: 'Akaya Kanadaka', cursive;
+  font-size: 2.2rem;
+  //background: -webkit-linear-gradient(rgb(224, 224, 68), rgb(190, 36, 36));
+  color:var(--color-red);
+}
+.search-topics{
+
+margin-left:auto;
+display: inline-flex;
+min-width:100px;
+align-items: center;
+color:var(--color-grey);
+//background-color:var(--color-blueLayer); 
+cursor: pointer;
+svg{
+  color:var(--color-grey);
+  fill:var(--color-grey);
+}
+}
+}
+
+@media(max-width:750px){
+  .header{
+    width:100vw;
+    margin:0%;
+  }
+}
