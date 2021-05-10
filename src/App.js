@@ -16,9 +16,8 @@ import { genresReducer } from "./components/store/reducers";
 import { Route, Switch } from "react-router-dom";
 
 //others
-import { CircularProgress } from "@material-ui/core";
+
 import React from "react";
-import Loadable from "react-loadable";
 import Author from "./components/Author";
 
 //define persisted state

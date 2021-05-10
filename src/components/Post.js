@@ -26,8 +26,17 @@ function Post(props) {
   function setAuthor() {
     props.updateNewAuthor(author);
   }
+  function getShareContent() {
+    let words = props.data.Quote;
+    words = words.replace(/\s/g, "+");
+    let authorsName = props.data.Display;
+    authorsName = authorsName.replace(/\s/g, "+");
+    return words + "+-+" + authorsName;
+  }
 
   let lines = getLines(props.data.Quote);
+  let twitterShare =
+    "https://twitter.com/intent/tweet?text=" + getShareContent();
   return (
     <div className="post">
       <div className="post-titlebar">
@@ -50,18 +59,17 @@ function Post(props) {
         <span>
           <Heart size={30} />
         </span>
-        <span>
-          <Star size={30} />
-        </span>
-        <span>
-          <Twitter size={30} />
-        </span>
+        <a href={twitterShare} target="_blank">
+          <span>
+            <Twitter size={30} />
+          </span>
+        </a>
         <span className="translate-to-english" onClick={copyToClipBoard}>
           <Copy size={30} />
           <div className="translate-tooltip">{copyStatus}</div>
         </span>
       </div>
-      <textarea ref={textRef} value={props.data.quote}></textarea>
+      <textarea ref={textRef} value={props.data.Quote}></textarea>
     </div>
   );
 }
