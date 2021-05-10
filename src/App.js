@@ -36,7 +36,7 @@ const Author = Loadable({
 });
 */
 
-const path = process.env.path||"/" ;
+const path = process.env.path||"" ;
 
 export default function App() {
   useEffect(()=>{
@@ -51,11 +51,11 @@ export default function App() {
         </div>
         <div className="content">
           <Switch>
-            <Route exact path={path+"/"}>
+            <Route exact path="/">
               <Genres />
               <Posts />
             </Route>
-            <Route exact path={path+"/author"}>
+            <Route exact path="/author">
               <Author />
             </Route>
           </Switch>
