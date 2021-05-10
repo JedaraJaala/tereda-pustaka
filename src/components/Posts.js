@@ -25,9 +25,10 @@ function Posts(props) {
 
   return (
     <div className="posts">
-      {props.feed.map((quote, index) => (
+      {props.feed?
+      props.feed.map((quote, index) => (
         <Post key={index} data={quote} />
-      ))}
+      )):null}
     </div>
   );
 }

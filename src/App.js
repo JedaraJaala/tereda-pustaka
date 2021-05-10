@@ -17,7 +17,7 @@ import { Route, Switch } from "react-router-dom";
 
 //others
 
-import React from "react";
+import React, { useEffect } from "react";
 import Author from "./components/Author";
 
 //define persisted state
@@ -36,6 +36,9 @@ const Author = Loadable({
 */
 
 export default function App() {
+  useEffect(()=>{
+    loadState()
+  },[])
   return (
     <Provider store={store}>
       <div className="App">

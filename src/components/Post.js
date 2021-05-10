@@ -4,6 +4,9 @@ import { Menu, Book, Heart, Star, Twitter, Copy } from "react-feather";
 import { updateAuthor } from "./store/action.js";
 import { connect } from "react-redux";
 
+const path =process.env.PUBLIC_URL;
+
+
 function getLines(quote) {
   return quote.split(/[,]+/);
 }
@@ -41,7 +44,7 @@ function Post(props) {
     <div className="post">
       <div className="post-titlebar">
         <span>{<Book />}</span>
-        <a href="/author" onClick={() => setAuthor()}>
+        <a href={path+"/author"} onClick={() => setAuthor()}>
           <span className="author-username">{props.data.Display}</span>
         </a>
         <span className="titlebar-menu">
