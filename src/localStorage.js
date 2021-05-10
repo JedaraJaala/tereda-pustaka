@@ -1,14 +1,16 @@
 import Quotes from "./quotes.json";
 
-export const loadState = () => {
+export const  loadState = () => {
   try {
+    
     const serializedState = localStorage.getItem("state");
-    if (serializedState === null) {
-      return [{ genres: [], feed: Quotes, author: "kuvempu" }];
+    if (serializedState !== null && serializedState[0].application==="teredapustaka") {
+      return JSON.parse(serializedState); 
     }
-    return JSON.parse(serializedState);
+    return [{ genres: [], feed: Quotes, author: "kuvempu",application:"teredapustaka" }];
+    
   } catch (err) {
-    return [{ genres: [], feed: Quotes, author: "kuvempu" }];
+    return [{ genres: [], feed: Quotes, author: "kuvempu",application:"teredapustaka" }];
   }
 };
 

@@ -28,12 +28,15 @@ const store = createStore(genresReducer, persistedState);
 store.subscribe(() => {
   saveState(store.getState());
 });
+console.log(store.getState())
 /*
 const Author = Loadable({
   loader: () => import("./components/Author"),
   loading: CircularProgress
 });
 */
+
+const path = process.env.path||"/" ;
 
 export default function App() {
   useEffect(()=>{
@@ -48,11 +51,11 @@ export default function App() {
         </div>
         <div className="content">
           <Switch>
-            <Route exact path="/">
+            <Route exact path={path+"/"}>
               <Genres />
               <Posts />
             </Route>
-            <Route exact path="/author">
+            <Route exact path={path+"/author"}>
               <Author />
             </Route>
           </Switch>

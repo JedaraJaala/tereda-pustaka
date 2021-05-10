@@ -15,8 +15,7 @@ function Author(props) {
     }
     initialise();
   });
-  if (loading) return <CircularProgress />;
-  else
+
     return (
       <div className="author">
         <div className="posts">
