@@ -1,7 +1,5 @@
 import Quotes from "./quotes.json";
 
-
-
 export const loadState = () => {
   try {
     const serializedState = localStorage.getItem("state");
