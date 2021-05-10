@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tereda-pustaka/static/css/main.7d376724.chunk.css",
-    "main.js": "/tereda-pustaka/static/js/main.6db9ed2b.chunk.js",
-    "main.js.map": "/tereda-pustaka/static/js/main.6db9ed2b.chunk.js.map",
+    "main.js": "/tereda-pustaka/static/js/main.a486a63a.chunk.js",
+    "main.js.map": "/tereda-pustaka/static/js/main.a486a63a.chunk.js.map",
     "runtime-main.js": "/tereda-pustaka/static/js/runtime-main.110a3d46.js",
     "runtime-main.js.map": "/tereda-pustaka/static/js/runtime-main.110a3d46.js.map",
     "static/js/2.1457e7fe.chunk.js": "/tereda-pustaka/static/js/2.1457e7fe.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.110a3d46.js",
     "static/js/2.1457e7fe.chunk.js",
     "static/css/main.7d376724.chunk.css",
-    "static/js/main.6db9ed2b.chunk.js"
+    "static/js/main.a486a63a.chunk.js"
   ]
 }
