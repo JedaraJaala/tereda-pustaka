@@ -9,7 +9,7 @@ const path = process.env.PUBLIC_URL || "/tereda-pustaka"
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <BrowserRouter basename={}>
+    <BrowserRouter basename={path}>
       <App />
     </BrowserRouter>
   </StrictMode>,

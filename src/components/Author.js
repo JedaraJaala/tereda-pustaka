@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import Post from "./Post.js";
 import "./Author.scss";
 import { CircularProgress } from "@material-ui/core";
+
 function Author(props) {
   const [feed, setFeed] = useState([]);
   const [loading, setLoading] = useState(true);
