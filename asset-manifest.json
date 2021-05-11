@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/tereda-pustaka/static/css/main.7d376724.chunk.css",
-    "main.js": "/tereda-pustaka/static/js/main.33d5dd73.chunk.js",
-    "main.js.map": "/tereda-pustaka/static/js/main.33d5dd73.chunk.js.map",
+    "main.css": "/tereda-pustaka/static/css/main.6b7bc4a1.chunk.css",
+    "main.js": "/tereda-pustaka/static/js/main.08b42944.chunk.js",
+    "main.js.map": "/tereda-pustaka/static/js/main.08b42944.chunk.js.map",
     "runtime-main.js": "/tereda-pustaka/static/js/runtime-main.110a3d46.js",
     "runtime-main.js.map": "/tereda-pustaka/static/js/runtime-main.110a3d46.js.map",
-    "static/js/2.d745e391.chunk.js": "/tereda-pustaka/static/js/2.d745e391.chunk.js",
-    "static/js/2.d745e391.chunk.js.map": "/tereda-pustaka/static/js/2.d745e391.chunk.js.map",
+    "static/js/2.b83d72e8.chunk.js": "/tereda-pustaka/static/js/2.b83d72e8.chunk.js",
+    "static/js/2.b83d72e8.chunk.js.map": "/tereda-pustaka/static/js/2.b83d72e8.chunk.js.map",
     "index.html": "/tereda-pustaka/index.html",
-    "static/css/main.7d376724.chunk.css.map": "/tereda-pustaka/static/css/main.7d376724.chunk.css.map",
-    "static/js/2.d745e391.chunk.js.LICENSE.txt": "/tereda-pustaka/static/js/2.d745e391.chunk.js.LICENSE.txt"
+    "static/css/main.6b7bc4a1.chunk.css.map": "/tereda-pustaka/static/css/main.6b7bc4a1.chunk.css.map",
+    "static/js/2.b83d72e8.chunk.js.LICENSE.txt": "/tereda-pustaka/static/js/2.b83d72e8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.110a3d46.js",
-    "static/js/2.d745e391.chunk.js",
-    "static/css/main.7d376724.chunk.css",
-    "static/js/main.33d5dd73.chunk.js"
+    "static/js/2.b83d72e8.chunk.js",
+    "static/css/main.6b7bc4a1.chunk.css",
+    "static/js/main.08b42944.chunk.js"
   ]
 }
