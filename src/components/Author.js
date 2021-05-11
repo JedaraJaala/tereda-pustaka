@@ -11,8 +11,8 @@ class Author extends React.Component {
   }
 
   async componentDidMount(){
-    let tmp =await getAuthor(this.props.author);
-    console.log(this.props.author)
+    let bs = JSON.parse(localStorage.getItem("state"));
+    let tmp = await getAuthor(bs.author);
     this.setState({feed:tmp})
   }
   

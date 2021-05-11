@@ -21,15 +21,9 @@ function Genres(props) {
   const [CurSlide, setCurSlide] = useState("left");
 
   async function handleGenres(selected) {
-    if (props.genres.includes(selected)) {
-      props.removeOldGenre(selected);
-      let resp = await getTopics(props.genres);
-      props.updateUserFeed(resp);
-    } else {
       props.addNewGenre(selected);
-      let resp = await getTopics(props.genres);
-      props.updateUserFeed(resp);
-    }
+      let newFeed = await getTopics([selected]);
+      props.updateUserFeed(newFeed);
   }
 
   function handleSlide(direction) {

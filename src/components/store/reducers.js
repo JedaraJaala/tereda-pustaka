@@ -13,7 +13,7 @@ export const genresReducer = (state = defaultState, action) => {
   let newState = {...state};
   switch (action.type) {
     case ADD:
-      newState.genres.push(action.genre);
+      newState.genres=[action.genre];
       return newState;
     case REMOVE:
       let tmp = newState.genres;
