@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import { Menu, Book, Heart, Star, Twitter, Copy } from "react-feather";
 import { updateAuthor } from "./store/action.js";
 import { connect } from "react-redux";
-
+import getAuthor from "./fetch/author.js";
 const path =process.env.PUBLIC_URL;
 
 
@@ -26,8 +26,9 @@ function Post(props) {
     }, 3000);
   }
 
-  function setAuthor() {
+const setAuthor = ()=> {
     props.updateNewAuthor(author);
+    
   }
   function getShareContent() {
     let words = props.data.Quote;
@@ -79,7 +80,7 @@ function Post(props) {
 
 const mapStateToProps = (state) => {
   return {
-    author: state[0].author
+    author: state.author
   };
 };
 

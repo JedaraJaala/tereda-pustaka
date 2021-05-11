@@ -26,9 +26,10 @@ const persistedState = loadState();
 // define redux store
 const store = createStore(genresReducer, persistedState);
 store.subscribe(() => {
+  console.log(store.getState().author)
   saveState(store.getState());
 });
-console.log(store.getState())
+
 /*
 const Author = Loadable({
   loader: () => import("./components/Author"),

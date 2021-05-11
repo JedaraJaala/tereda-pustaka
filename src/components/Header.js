@@ -1,7 +1,7 @@
 import "./Header.scss";
 import { Search } from "react-feather";
 
-const path=process.env.PATH||""
+const path=process.env.PATH||"/tereda-pustaka"
 
 export default function Header() {
   return (

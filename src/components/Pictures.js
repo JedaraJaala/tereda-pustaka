@@ -4,7 +4,7 @@ import { Settings } from "react-feather";
 
 export default function Pictures({ Images }) {
   const [counter, setCounter] = useState(0);
-
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCounter((counter + 1) % 4);

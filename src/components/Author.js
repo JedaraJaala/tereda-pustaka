@@ -1,36 +1,37 @@
 import getAuthor from "./fetch/author.js";
-import { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import Post from "./Post.js";
 import "./Author.scss";
-import { CircularProgress } from "@material-ui/core";
+import React from "react";
 
-function Author(props) {
-  const [feed, setFeed] = useState([]);
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    async function initialise() {
-      let resp = await getAuthor(props.author);
-      setFeed(resp);
-      setLoading(false);
-    }
-    initialise();
-  });
+class Author extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {feed:[]}
+  }
 
+  async componentDidMount(){
+    let tmp =await getAuthor(this.props.author);
+    console.log(this.props.author)
+    this.setState({feed:tmp})
+  }
+  
+  render(){
     return (
       <div className="author">
         <div className="posts">
-          {feed.map((quote, index) => (
+          {this.state.feed.map((quote, index) => (
             <Post key={index} data={quote} />
           ))}
         </div>
       </div>
     );
 }
+}
 
 const mapStateToProps = (state) => {
   return {
-    author: state[0].author
+    author: state.author,
   };
 };
 

@@ -16,7 +16,7 @@ export const updateFeed = (feed) => ({
   feed
 });
 
-export const UPDATEAUTHOR = "ADDAUTHOR";
+export const UPDATEAUTHOR = "UPDATEAUTHOR";
 export const updateAuthor = (author) => ({
   type: UPDATEAUTHOR,
   author

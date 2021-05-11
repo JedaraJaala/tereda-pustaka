@@ -100,8 +100,8 @@ function Genres(props) {
 
 const mapStateToProps = (state) => {
   return {
-    genres: state[0].genres,
-    feed: state[0].feed
+    genres: state.genres,
+    feed: state.feed
   };
 };
 
